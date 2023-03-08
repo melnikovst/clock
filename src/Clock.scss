@@ -1,0 +1,122 @@
+.clockWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: url('./циферблат.png') no-repeat center center/93% 93%,
+    url('./фон-полоски.png') center center/ 50%;
+  border: 4px solid;
+  width: 55vh;
+  height: 55vh;
+  box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
+    inset 0 -15px 15px rgba(255, 255, 255, 0.05), 0 15px 15px rgba(0, 0, 0, 0.3),
+    inset 0 15px 15px rgba(0, 0, 0, 0.3);
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: black;
+    z-index: 111;
+  }
+
+  .hour {
+    position: absolute;
+
+    .hours {
+      width: 160px;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      border-radius: 50%;
+      transition: 1s linear;
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: 1.1vh;
+        height: 13vh;
+        z-index: 10;
+        border-radius: 6px 6px 0 0;
+        background: red;
+        background-size: 100px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+      }
+    }
+  }
+
+  .minute {
+    position: absolute;
+
+    .minutes {
+      width: 160px;
+      height: 270px;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      border-radius: 50%;
+      transition: 1s linear;
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: 0.9vh;
+        height: 18vh;
+        z-index: 10;
+        border-radius: 6px 6px 0 0;
+        background: black;
+        background-size: 100px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+      }
+    }
+  }
+
+  .second {
+    position: absolute;
+
+    .seconds {
+      width: 160px;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      border-radius: 50%;
+      transition: 1s linear;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 0.3vh;
+        height: 24vh;
+        z-index: 10;
+        border-radius: 6px 6px 0 0;
+        background: black;
+        background-size: 100px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -85%);
+      }
+    }
+  }
+}
+
+.buttonStyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  text-align: center;
+  border: 10px black;
+  background: rgba(241, 255, 197, 0.7);
+  margin-top: 20px;
+}
