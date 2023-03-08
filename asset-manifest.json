@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0280306a.css",
+    "main.js": "/static/js/main.be609e18.js",
+    "static/media/фон-стена.jpeg": "/static/media/фон-стена.21508362f4beaa398060.jpeg",
+    "static/media/циферблат.png": "/static/media/циферблат.af2311c37ba0820f65b4.png",
+    "index.html": "/index.html",
+    "main.0280306a.css.map": "/static/css/main.0280306a.css.map",
+    "main.be609e18.js.map": "/static/js/main.be609e18.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0280306a.css",
+    "static/js/main.be609e18.js"
+  ]
+}
